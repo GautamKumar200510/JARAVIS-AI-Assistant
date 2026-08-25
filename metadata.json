@@ -1,0 +1,10 @@
+{
+  "name": "JARAVIS — AI Personal Command Assistant",
+  "description": "Futuristic AI personal command center with voice recognition, speech synthesis, real-time web intelligence, notes vault, and system telemetry.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

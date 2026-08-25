@@ -1,0 +1,200 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    background-color: #0d0d0f;
+    color: #d1d5db;
+    font-family: 'Space Grotesk', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+  }
+}
+
+/* Font Family Utility Classes */
+.font-space {
+  font-family: 'Space Grotesk', system-ui, sans-serif;
+}
+
+.font-rajdhani {
+  font-family: 'Rajdhani', sans-serif;
+}
+
+.font-jetbrains {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.font-jakarta {
+  font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
+}
+
+.font-system {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Rich Markdown & Content Formatting */
+.markdown-formatted {
+  line-height: 1.65;
+}
+
+.markdown-formatted h1,
+.markdown-formatted h2,
+.markdown-formatted h3,
+.markdown-formatted h4 {
+  color: #f3f4f6;
+  font-weight: 600;
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.01em;
+}
+
+.markdown-formatted h1 { font-size: 1.35rem; border-bottom: 1px solid #1f1f23; padding-bottom: 0.25rem; }
+.markdown-formatted h2 { font-size: 1.2rem; color: #38bdf8; }
+.markdown-formatted h3 { font-size: 1.05rem; color: #22d3ee; }
+.markdown-formatted h4 { font-size: 0.95rem; }
+
+.markdown-formatted p {
+  margin-bottom: 0.75rem;
+}
+
+.markdown-formatted p:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-formatted strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.markdown-formatted em {
+  color: #e2e8f0;
+  font-style: italic;
+}
+
+.markdown-formatted ul {
+  list-style-type: disc;
+  padding-left: 1.35rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.markdown-formatted ol {
+  list-style-type: decimal;
+  padding-left: 1.35rem;
+  margin-top: 0.4rem;
+  margin-bottom: 0.75rem;
+}
+
+.markdown-formatted li {
+  margin-bottom: 0.35rem;
+}
+
+.markdown-formatted blockquote {
+  border-left: 3px solid #06b6d4;
+  padding-left: 0.85rem;
+  margin: 0.75rem 0;
+  color: #94a3b8;
+  font-style: italic;
+  background: rgba(6, 182, 212, 0.04);
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  border-radius: 0 0.375rem 0.375rem 0;
+}
+
+.markdown-formatted table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0.75rem 0;
+  font-size: 0.85rem;
+}
+
+.markdown-formatted th {
+  background-color: #16161a;
+  color: #22d3ee;
+  font-family: 'JetBrains Mono', monospace;
+  text-align: left;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #2d2d35;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.markdown-formatted td {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #1f1f23;
+  color: #d1d5db;
+}
+
+.markdown-formatted tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.015);
+}
+
+.markdown-formatted code:not(pre code) {
+  background: #18181b;
+  color: #38bdf8;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.85em;
+  padding: 0.15rem 0.4rem;
+  border-radius: 0.375rem;
+  border: 1px solid #27272a;
+}
+
+/* Custom scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0c;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f1f23;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2d2d35;
+}
+
+/* Pulse animation for voice bars */
+@keyframes voice-wave {
+  0%, 100% { height: 6px; }
+  50% { height: 22px; }
+}
+
+.animate-wave-1 {
+  animation: voice-wave 0.8s ease-in-out infinite alternate;
+}
+.animate-wave-2 {
+  animation: voice-wave 0.8s ease-in-out infinite alternate 0.2s;
+}
+.animate-wave-3 {
+  animation: voice-wave 0.8s ease-in-out infinite alternate 0.4s;
+}
+.animate-wave-4 {
+  animation: voice-wave 0.8s ease-in-out infinite alternate 0.1s;
+}
+.animate-wave-5 {
+  animation: voice-wave 0.8s ease-in-out infinite alternate 0.3s;
+}
+
+/* Core Arc Reactor Glow Keyframes */
+@keyframes core-rotate {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@keyframes core-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.85; filter: drop-shadow(0 0 15px rgba(6, 182, 212, 0.4)); }
+  50% { transform: scale(1.05); opacity: 1; filter: drop-shadow(0 0 30px rgba(6, 182, 212, 0.8)); }
+}
+
+.animate-core-rotate {
+  animation: core-rotate 18s linear infinite;
+}
+
+.animate-core-pulse {
+  animation: core-pulse 3s ease-in-out infinite;
+}
