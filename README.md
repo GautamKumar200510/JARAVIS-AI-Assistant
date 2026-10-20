@@ -4,7 +4,7 @@ An AI-powered personal command assistant that combines voice commands, real-time
 
 ## 🚀 Live Demo
 
-**Try the application:** https://jaravis-ai-assistant.vercel.app
+
 
 ## ✨ Features
 
