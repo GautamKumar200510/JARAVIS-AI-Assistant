@@ -2,7 +2,7 @@
 
 An AI-powered personal command assistant that combines voice commands, real-time AI responses, web search, and full-stack functionality to deliver a smart and interactive user experience.
 
-## 🚀 Live Demo
+
 
 
 
