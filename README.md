@@ -107,7 +107,7 @@ The application may require API keys for AI responses and web search.
 
 Do not expose secret API keys in frontend code.
 
-## 🌍 Deployment
+##  Deployment
 
 The project includes a Vercel deployment link. For deployment:
 
