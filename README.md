@@ -107,15 +107,7 @@ The application may require API keys for AI responses and web search.
 
 Do not expose secret API keys in frontend code.
 
-##  Deployment
 
-The project includes a Vercel deployment link. For deployment:
-
-1. Import the repository into Vercel.
-2. Configure the correct build settings.
-3. Add the required environment variables.
-4. Deploy the application.
-5. Verify that the frontend and any required backend services work correctly.
 
 Ensure the backend is deployed to a compatible environment if it requires a persistent Node.js server.
 
